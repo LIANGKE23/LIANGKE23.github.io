@@ -1,0 +1,117 @@
+html {
+  background-color: #eeeeee; 
+}
+
+.projects-box {
+  /* background-color: green; */
+  height: 230px;
+text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: all ease-in .1s;
+padding-left: 0px;
+
+}
+.projects-show {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  height: 30px;
+  line-height: 20px;
+  width: 100%;
+  font-size: 15px;
+  color: #0067c8;
+  cursor: pointer;
+  background: linear-gradient(to bottom, transparent, #fff, #fff);
+}
+.projects-show-text {
+  position: relative;
+    text-align: left;
+  top: 10px;
+}
+
+.hr-dotted {
+    border: 0;
+    border-top: 1px dotted #a2a9b6;
+}
+
+body { 
+  font-family: Arial, Arial, Arial, Arial, Arial, Arial;
+  color: #000;
+  background-color: #ffffff; 
+  text-align:justify; /* for IE */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:  55px;
+  padding-right: 55px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  max-width: 960px;
+}
+
+table{ background-color: #ffffff; }
+
+a, a:link, a:visited {
+  color: #1f82a9;
+  background:transparent;
+  text-decoration: underline;
+  cursor:pointer;
+  background-color:underline;
+}
+a:hover {
+  color: #006699;
+  background:inherit;
+  text-decoration: underline;
+}
+
+img { border: 1; }
+
+h1,h2,h3,h4,h5,h6,h7,h8{ font-family: Arial,Arial,Arial,Arial, Arial, Arial,Arial,Arial,Arial,Arial; }
+
+p { font-size:18; font-family: Arial;}
+p2 { font-size:18; font-weight:bold; font-family: Arial; align-content: justify;}
+p3 { font-size:18; color: #A9A9A9;font-weight:normal; font-family:  Arial; align-content: justify;}
+i {font-size:15; color: #0C8918; font-family: italic; align-content: justify}
+i2 {font-size:15; color: #0C8918; font-family: Arial; align-content: justify}
+p4 { font-size:18; font-weight:normal; font-family:  Arial; align-content: justify;}
+p5 { font-size:15; font-weight:bold; font-family:  Arial; align-content: justify;}
+h5 {font-size:25px; font-weight:normal;}
+h6 {font-size:20px; font-weight:normal;}
+h7 {font-size:18px; font-weight:normal;font-family: Arial;}
+h8 {font-size:16px; font-weight:normal;font-family: Arial;}
+
+.badge {
+    font-family: Arial;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    margin-top: .5em;
+    margin-left: -.5em;
+    color: white;
+    background-color: cornflowerblue;
+    font-size: .8em
+}
+
+
+#navbar{
+font-size:19;
+
+}
+#navbar a{
+text-decoration: none;
+padding-right: 15px;
+}
+#NewsOL{
+color: #000;
+font-family: Arial;}
+#TEACHINGOL{
+color: #000;
+font-family: Arial;}
+#ProjectsList{
+font-size:18;
+font-family: Arial;}
