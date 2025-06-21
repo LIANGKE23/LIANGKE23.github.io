@@ -1,16 +1,16 @@
 html {
   background-color: #eeeeee; 
+  scroll-behavior: smooth;
 }
 
 .projects-box {
   /* background-color: green; */
   height: 230px;
-text-align: left;
+  text-align: left;
   position: relative;
   overflow: hidden;
   transition: all ease-in .1s;
-padding-left: 0px;
-
+  padding-left: 0px;
 }
 .projects-show {
   padding: 0;
@@ -29,7 +29,7 @@ padding-left: 0px;
 }
 .projects-show-text {
   position: relative;
-    text-align: left;
+  text-align: left;
   top: 10px;
 }
 
@@ -42,34 +42,40 @@ body {
   font-family: Arial, Arial, Arial, Arial, Arial, Arial;
   color: #000;
   background-color: #ffffff; 
-  text-align:justify; /* for IE */
+  text-align: justify; /* for IE */
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  padding-left:  55px;
+  padding-left: 55px;
   padding-right: 55px;
   padding-top: 10px;
   padding-bottom: 30px;
   max-width: 960px;
+  line-height: 1.5;
 }
 
 table{ background-color: #ffffff; }
 
 a, a:link, a:visited {
   color: #1f82a9;
-  background:transparent;
+  background: transparent;
   text-decoration: underline;
-  cursor:pointer;
-  background-color:underline;
+  cursor: pointer;
+  background-color: underline;
+  transition: color 0.2s ease;
 }
 a:hover {
   color: #006699;
-  background:inherit;
+  background: inherit;
   text-decoration: underline;
 }
 
-img { border: 1; }
+img { 
+  border: 1; 
+  max-width: 100%;
+  height: auto;
+}
 
 h1,h2,h3,h4,h5,h6,h7,h8{ font-family: Arial,Arial,Arial,Arial, Arial, Arial,Arial,Arial,Arial,Arial; }
 
@@ -99,19 +105,342 @@ h8 {font-size:16px; font-weight:normal;font-family: Arial;}
 
 
 #navbar{
-font-size:19;
-
+  font-size: 19px;
+  padding: 10px 0;
 }
 #navbar a{
-text-decoration: none;
-padding-right: 15px;
+  text-decoration: none;
+  padding: 5px 12px;
+  margin-left: 5px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
 }
-#NewsOL{
-color: #000;
-font-family: Arial;}
+#navbar a:hover {
+  background-color: #f0f0f0;
+}
+#NewsOL {
+  color: #000;
+  font-family: Arial;
+  padding-left: 20px;
+}
+#NewsOL li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+#NewsOL b {
+  display: inline-block;
+  margin-bottom: 3px;
+}
 #TEACHINGOL{
-color: #000;
-font-family: Arial;}
+  color: #000;
+  font-family: Arial;
+}
 #ProjectsList{
-font-size:18;
-font-family: Arial;}
+  font-size:18;
+  font-family: Arial;
+}
+
+.responsive-navbar {
+  overflow: hidden;
+  text-align: right;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  body {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #navbar {
+    text-align: center;
+  }
+  
+  #navbar a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px 10px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+  }
+  
+  .responsive-table td {
+    display: block;
+    width: 100% !important;
+    padding: 5px 0;
+  }
+  
+  table#tbInformation td {
+    text-align: center;
+  }
+  
+  .profile-img-cell {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .info-cell {
+    text-align: center !important;
+  }
+  
+  .info-cell h7 {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .pub-img-cell {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-right: 0;
+  }
+  
+  .pub-img {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .pub-info-cell {
+    text-align: center !important;
+  }
+  
+  .badge {
+    position: relative;
+    margin: 5px auto;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    margin-bottom: 10px;
+  }
+  
+  h5, h6, h7, h8 {
+    text-align: center;
+  }
+  
+  .responsive-navbar {
+    text-align: center;
+    padding: 5px 0 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+  }
+  
+  .responsive-navbar a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px 10px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .responsive-navbar a:hover {
+    background-color: #e8e8e8;
+  }
+  
+  .projects-box {
+    height: 280px;
+  }
+  
+  #NewsOL {
+    padding-left: 15px;
+  }
+  
+  #NewsOL li {
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  
+  hr {
+    margin: 15px 0;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+  
+  table#SERVICEOL td {
+    text-align: left;
+  }
+  
+  table#SERVICEOL h8 {
+    display: inline-block;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  #navbar a {
+    font-size: 16px;
+    padding: 3px 8px;
+  }
+  
+  h5 {font-size: 22px;}
+  h6 {font-size: 18px;}
+  h7 {font-size: 16px;}
+  h8 {font-size: 14px;}
+  
+  p, p2, p3, p4 {font-size: 16;}
+  i, i2 {font-size: 14;}
+  
+  .profile-img {
+    max-width: 180px;
+    border-width: 1px;
+  }
+  
+  .projects-box {
+    height: 320px;
+  }
+  
+  #NewsOL {
+    padding-left: 10px;
+  }
+  
+  hr {
+    margin: 12px 0;
+  }
+  
+  h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+/* 响应式表格样式 */
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+table#SERVICEOL {
+  width: 100%;
+}
+
+table#SERVICEOL td {
+  padding: 5px 0;
+}
+
+.profile-img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #000;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.02);
+}
+
+.info-cell h5 {
+  margin-bottom: 10px;
+}
+
+.info-cell h7 {
+  line-height: 1.5;
+}
+
+.pub-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.email-container {
+  display: inline-block;
+}
+
+@media screen and (max-width: 480px) {
+  .email-container {
+    display: block;
+    word-break: break-all;
+  }
+  
+  .email-spacer {
+    display: none;
+  }
+  
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* 发布物样式优化 */
+.pub-img-cell {
+  vertical-align: top;
+  padding-right: 15px;
+  position: relative;
+}
+
+.pub-info-cell {
+  vertical-align: top;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* 交互效果 */
+.responsive-navbar a {
+  position: relative;
+  overflow: hidden;
+}
+
+.responsive-navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #1f82a9;
+  transition: all 0.3s ease;
+}
+
+.responsive-navbar a:hover::after {
+  width: 80%;
+  left: 10%;
+}
+
+@media (hover: hover) {
+  .pub-img-cell:hover .pub-img {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .badge {
+    transition: background-color 0.3s ease;
+  }
+  
+  .pub-img-cell:hover .badge {
+    background-color: #5f8dd3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-navbar a:active {
+    transform: scale(0.98);
+  }
+}
