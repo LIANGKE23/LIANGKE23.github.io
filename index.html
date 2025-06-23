@@ -685,11 +685,36 @@
 		  show = true;
 		} else {
 		  show = false;
-		  document.querySelector('#projects-box').style.height = '200px';
+		  document.querySelector('#projects-box').style.height = '230px';
 		  document.querySelector('#projects-box').style.paddingBottom = '30px';
 		  document.querySelector('#projects-show-text').innerHTML = 'MORE';
 		}
+		
+		// 平滑滚动到新闻部分
+		if (!show) {
+		  document.querySelector('#NewsOL').scrollIntoView({behavior: 'smooth'});
+		}
 	  }
+	  
+	  // 添加媒体查询检测，动态调整projects-box高度
+	  function adjustProjectsBoxHeight() {
+	    const mediaQuery768 = window.matchMedia('(max-width: 768px)');
+	    const mediaQuery480 = window.matchMedia('(max-width: 480px)');
+	    
+	    if (!show) {
+	      if (mediaQuery480.matches) {
+	        document.querySelector('#projects-box').style.height = '320px';
+	      } else if (mediaQuery768.matches) {
+	        document.querySelector('#projects-box').style.height = '280px';
+	      } else {
+	        document.querySelector('#projects-box').style.height = '230px';
+	      }
+	    }
+	  }
+	  
+	  // 页面加载和窗口大小改变时调整高度
+	  window.addEventListener('load', adjustProjectsBoxHeight);
+	  window.addEventListener('resize', adjustProjectsBoxHeight);
 </script>
 
 </body></html>
