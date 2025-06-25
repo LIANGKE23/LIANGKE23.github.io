@@ -73,8 +73,8 @@ a:hover {
 
 img { 
   border: 1; 
-  max-width: 100%;
-  height: auto;
+  width: fixed;
+  height: fixed;
 }
 
 h1,h2,h3,h4,h5,h6,h7,h8{ font-family: Arial,Arial,Arial,Arial, Arial, Arial,Arial,Arial,Arial,Arial; }
