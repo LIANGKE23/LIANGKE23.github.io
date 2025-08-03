@@ -10,7 +10,7 @@ html {
   position: relative;
   overflow: hidden;
   transition: all ease-in .1s;
-  padding-left: 0px;
+  padding-left: 10px;
 }
 .projects-show {
   padding: 0;
@@ -445,3 +445,4 @@ h3 {
     transform: scale(0.98);
   }
 }
+
