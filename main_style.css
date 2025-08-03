@@ -246,7 +246,7 @@ h8 {font-size:16px; font-weight:normal;font-family: Arial;}
   }
   
   #NewsOL {
-    padding-left: 15px;
+    padding-left: 30px;
   }
   
   #NewsOL li {
@@ -445,4 +445,5 @@ h3 {
     transform: scale(0.98);
   }
 }
+
 
